@@ -1,28 +1,24 @@
-<nav>
-    <ul id="menu" class="topmenu">
-        <li class="topfirst"><?php echo anchor(current_url(),img('stock.png').' Gestion du stock','style="height:18px;line-height:18px;"') ?>                    
-            <ul>
-            <li><a href="#">Saisir une entrée en stock</a></li>
-            <li><a href="#">Saisir une sortie de stock</a></li>
-            <li><a href="#">Statistiques</a></li>
-            </ul>
-        </li>				
-        <li class="topmenu"><?php echo anchor(current_url(),img('prod.png').' Produits','style="height:18px;line-height:18px;"') ?>
-            <ul>
-            <li><a href="#">Nouveau produit disponible</a></li>
-            <li><a href="#">Modifier un produit</a></li>
-            <li><a href="#">Retirer un produit de la vente</a></li>
-            </ul>
-        </li>
-        <li class="topmenu"><?php echo anchor(current_url(),img('categ.png').' Catégories','style="height:18px;line-height:18px;"') ?>
-            <ul>
-            <li><a href="#">Ajouter</a></li>
-            <li><a href="#">Modifier</a></li>
-            <li><a href="#">Supprimer</a></li>
-            </ul>
-        </li>
-        <li class="toplast">
-            <?php echo anchor('login/disconnect',img('switch.png').' Déconnecter','style="height:18px;line-height:18px;"') ?>                    
-        </li>
-    </ul>			
+<nav class="nav-extended scrollspy row" role="navigation" id="nav">
+    	<div class="col s12">
+    		<div class="container">
+		        <div class="nav-wrapper container col s12">
+		            <a id="logo-container" href="<?php echo base_url('Accueil') ?>" data-target="nav-mobile" class="brand-logo elephant">Faty Concept
+		            </a>
+		            <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+
+		            <ul class="right hide-on-med-and-down">
+                    <?php
+                        $this->load->view('common/navConnexion');
+                    ?>
+		            </ul>
+		        </div>
+		        <div class="nav-content  col s12">
+		          	<ul class="tabs tabs-transparent hide-on-med-and-down">
+		                <?php
+                        $this->load->view('common/linkNav');
+                    ?>
+		          	</ul>
+		        </div>
+	        </div>
+	    </div>
 </nav>

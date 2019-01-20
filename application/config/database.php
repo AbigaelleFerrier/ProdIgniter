@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'prodigniterdb',
+	'hostname' => 'localhost:3307',
+	'username' => 'fatyconcjbfatyrt',
+	'password' => 'E124zuqx145',
+	'database' => 'fatyconcjbfatyrt',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
